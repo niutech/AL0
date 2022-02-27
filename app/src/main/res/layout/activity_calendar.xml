@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/calendar_activity_calendar"
+        style="@style/calendar_activity_calendar_wrapper"
+        android:orientation="vertical"
+        android:gravity="center">
+        <View style="@style/spacer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/constraint_footer_wrapper"
+        style="@style/constraint_footer_wrapper">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/calendar_activity_button_previous_month"
+                android:text="@string/calendar_activity_button_previous_month_prefix" />
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/calendar_activity_close_button"
+                android:text="@string/close_symbol" />
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/calendar_activity_button_next_month"
+                android:text="@string/calendar_activity_button_next_month_prefix"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

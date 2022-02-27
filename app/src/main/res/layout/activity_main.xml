@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="computer.fuji.al0.MainActivity">
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/main_activity_wrapper"
+        style="@style/main_activity__wrapper">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_activity_menu_list"
+            style="@style/activity__menu_list" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_activity_status"
+        style="@style/activity__status"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <TextView
+            android:id="@+id/main_activity_status_signal"
+            style="@style/activity__status_item"
+            android:text="@string/main_activity_status_signal_no_sim" />
+        <View
+            style="@style/spacer" />
+        <TextView
+            android:id="@+id/main_activity_status_battery"
+            style="@style/activity__status_item"
+            android:text="" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

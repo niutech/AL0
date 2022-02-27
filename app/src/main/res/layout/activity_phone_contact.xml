@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="computer.fuji.al0.activities.PhoneContactActivity"
+    android:id="@+id/phone_contact_activity_main_wrapper">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/phone_contact_activity__upper_wrapper"
+        style="@style/phone_contact_activity__upper_wrapper"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            style="@style/phone_contact_activity__list_wrapper">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/phone_contact_activity__list"
+                style="@style/phone_contact_activity__list" />
+            <View style="@style/fade_to_color5_up_down" />
+            <View style="@style/fade_to_color5_down_up__tall" />
+        </RelativeLayout>
+        <TextView
+            style="@style/phone_contact__number"
+            android:id="@+id/phone_contact_activity_number"
+            android:text="02323123" />
+        <TextView
+            style="@style/phone_contact__title"
+            android:id="@+id/phone_contact_activity_title"
+            android:text="Contact Name"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            />
+        <TextView
+            style="@style/phone_contact__label_no_activity"
+            android:id="@+id/phone_contact_activity_label_no_activity"
+            android:text="@string/phone_contact_activity_label_no_activity"
+            android:visibility="gone"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/phone_contact_activity__upper_wrapper_bottom_position"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/phone_contact_activity__bottom_wrapper"
+        app:layout_constraintLeft_toLeftOf="@id/phone_contact_activity__bottom_wrapper"
+        />
+    <LinearLayout
+        style="@style/phone_contact_activity__bottom_wrapper"
+        android:id="@+id/phone_contact_activity__bottom_wrapper"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints" >
+        <!-- 24dp to get space eaten by upper elements using negative positioning -->
+        <fragment
+            android:id="@+id/phone_contact_activity__sms_composer"
+            android:name="computer.fuji.al0.fragments.SmsComposerFragment"
+            style="@style/phone_contact_activity_sms_composer"
+            />
+        <LinearLayout
+            android:id="@+id/phone_contact_activity__footer"
+            style="@style/activity_menu_footer_wrapper">
+            <LinearLayout style="@style/activity_menu_footer_line">
+                <computer.fuji.al0.components.Button
+                    style="@style/button_fill"
+                    android:id="@+id/phone_contact_activity_button_add_contact"
+                    android:text="@string/phone_contact_activity_button_add_contact"
+                    android:visibility="gone" />
+                <computer.fuji.al0.components.Button
+                    style="@style/button_fill"
+                    android:id="@+id/phone_contact_activity_button_delete_contact"
+                    android:text="@string/phone_contact_activity_button_delete_contact"
+                    android:visibility="gone"
+                    />
+                <computer.fuji.al0.components.Button
+                    style="@style/button_fill"
+                    android:id="@+id/phone_contact_activity_button_delete"
+                    android:text="@string/phone_contact_activity_button_delete_item"
+                    android:visibility="gone"
+                    />
+                <computer.fuji.al0.components.Button
+                    style="@style/button_fill"
+                    android:id="@+id/phone_contact_activity_button_delete_all_itens"
+                    android:text="@string/phone_contact_activity_button_delete_all_items"
+                    />
+                <View style="@style/activity_menu_footer_spacer_small"
+                    android:id="@+id/phone_contact_activity_button_copy_spacer"
+                    android:visibility="gone" />
+                <computer.fuji.al0.components.Button
+                    style="@style/button"
+                    android:id="@+id/phone_contact_activity_button_copy"
+                    android:text="@string/phone_contact_activity_button_selected_sms_copy"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <LinearLayout style="@style/activity_menu_footer_line">
+                <computer.fuji.al0.components.Button
+                    style="@style/button_full_width"
+                    android:id="@+id/phone_contact_activity_button_sms"
+                    android:text="@string/phone_contact_activity_button_sms" />
+            </LinearLayout>
+            <LinearLayout style="@style/activity_menu_footer_line">
+                <computer.fuji.al0.components.Button
+                    style="@style/button_back"
+                    android:id="@+id/phone_contact_activity_button_close"
+                    android:text="@string/close_symbol" />
+                <View style="@style/activity_menu_footer_spacer_small"/>
+                <computer.fuji.al0.components.Button
+                    style="@style/button_fill"
+                    android:id="@+id/phone_contact_activity_button_call"
+                    android:text="@string/phone_contact_activity_button_call" />
+                <computer.fuji.al0.components.Button
+                    style="@style/button_fill"
+                    android:id="@+id/phone_contact_activity_button_current_call"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:visibility="gone"/>
+                <computer.fuji.al0.components.Button
+                    style="@style/button_squared"
+                    android:id="@+id/phone_contact_activity_button_current_call_time"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/phone_contact_activity_status"
+        style="@style/activity__status"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/phone_contact_activity_status_signal"
+            style="@style/activity__status_item"
+            android:text="@string/main_activity_status_signal_no_sim" />
+        <View
+            style="@style/spacer" />
+        <TextView
+            android:id="@+id/phone_contact_activity_status_battery"
+            style="@style/activity__status_item"
+            android:text="" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="computer.fuji.al0.activities.CallActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/constraint_wrapper_fill_until_footer"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            style="@style/constraint_wrapper_fill_until_footer__linear_layout"
+            android:paddingTop="32dp"
+            android:gravity="start">
+            <LinearLayout
+                style="@style/call_header">
+                <TextView
+                    style="@style/call_time"
+                    android:text="@string/call_activity_label_out_calling"
+                    android:id="@+id/call_activity_label_status"
+                    android:textAllCaps="true"
+                    />
+                <TextView
+                    style="@style/call_inbound_info"
+                    android:id="@+id/call_activity_label_details_divider"
+                    android:text=" • "
+                    android:visibility="gone"/>
+                <TextView
+                    style="@style/call_info"
+                    android:text=""
+                    android:id="@+id/call_activity_label_details"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/phone_contact__title"
+                    android:id="@+id/call_activity_label_connecting_number"
+                    android:text="0000000000"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit ="marquee_forever"
+                    android:focusableInTouchMode="true"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+            <View style="@style/spacer"/>
+            <computer.fuji.al0.components.Numpad
+                android:id="@+id/call_activity_numpad"
+                style="@style/call_activity__call_numpad"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/constraint_footer_wrapper"
+        style="@style/constraint_footer_wrapper"
+        tools:ignore="MissingConstraints">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/call_activity_button_silent"
+                android:text="@string/call_activity_button_silent"
+                android:layout_alignParentRight="true" />
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/call_activity_button_mute"
+                android:text="@string/call_activity_button_mute"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"/>
+            <View style="@style/activity_menu_footer_spacer_small"
+                android:id="@+id/call_activity_button_numpad_spacer"
+                android:visibility="gone"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button"
+                android:id="@+id/call_activity_button_numpad"
+                android:text="@string/call_activity_button_numpad"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/call_activity_button_speaker"
+                android:text="@string/call_activity_button_speaker"/>
+            <View style="@style/activity_menu_footer_spacer_small"
+                android:id="@+id/call_activity_button_bluetooth_spacer"
+                android:visibility="gone"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button"
+                android:id="@+id/call_activity_button_bluetooth"
+                android:text="@string/call_activity_button_bluetooth"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/call_activity_button_collapse"
+                android:text="@string/close_contestual_symbol"
+                android:visibility="gone"/>
+            <View android:id="@+id/call_activity_spacer_button_collapse"
+                style="@style/activity_menu_footer_spacer_small"
+                android:visibility="gone"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/call_activity_button_hangup"
+                android:text="@string/call_activity_button_hangup" />
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/call_activity_button_answer"
+                android:text="@string/call_activity_button_answer"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/call_activity_status"
+        style="@style/activity__status"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+            <TextView
+                android:id="@+id/call_activity_status_signal"
+                style="@style/activity__status_item"
+                android:text="@string/main_activity_status_signal_no_sim" />
+        <View
+            style="@style/spacer" />
+        <TextView
+            android:id="@+id/call_activity_status_battery"
+            style="@style/activity__status_item"
+            android:text="" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/fill_until_keyboard" >
+        <computer.fuji.al0.components.TextInputMovableCursor
+            android:id="@+id/phone_contacts_new_activity_text_input_name"
+            style="@style/phone_contacts_new_fragment__text_input"
+            android:gravity="start"
+            android:ellipsize="none"
+            android:singleLine="true" />
+            />
+        <TextView
+            style="@style/phone_contacts_new_input_label"
+            android:text="@string/phone_contacts_new_activity_label_name"
+        />
+    </LinearLayout>>
+    <computer.fuji.al0.components.Keyboard
+        android:id="@+id/phone_contacts_new_activity_keyboard"
+        style="@style/keyboard"/>
+</RelativeLayout>

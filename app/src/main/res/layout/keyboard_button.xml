@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/keyboard_button_wrapper">
+    <LinearLayout style="@style/keyboard_button">
+        <TextView
+            android:id="@+id/keyboard_button_letter"
+            style="@style/keyboard_button_letter" />
+    </LinearLayout>
+</LinearLayout>

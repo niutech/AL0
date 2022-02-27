@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="computer.fuji.al0.activities.CameraActivity">
+    <RelativeLayout
+        style="@style/camera_activity__wrapper">
+        <LinearLayout
+            style="@style/camera_activity__camera_wrapper">
+            <View
+                style="@style/spacer" />
+            <FrameLayout
+                android:id="@+id/camera_camera_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <computer.fuji.al0.components.AutoFitTextureView
+                style="@style/fill_until_footer_triple_line"
+                android:id="@+id/camera_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/constraint_footer_wrapper"
+            style="@style/constraint_footer_wrapper"
+            tools:ignore="MissingConstraints">
+            <LinearLayout style="@style/activity_menu_footer_line">
+                <computer.fuji.al0.components.Button
+                    style="@style/button_full_width"
+                    android:id="@+id/camera_activity_button_use_front_camera"
+                    android:text="@string/camera_activity_button_use_front_camera" />
+            </LinearLayout>
+            <LinearLayout style="@style/activity_menu_footer_line">
+                <computer.fuji.al0.components.Button
+                    style="@style/button_full_width"
+                    android:id="@+id/camera_activity_button_take_video"
+                    android:text="@string/camera_activity_button_take_video" />
+                <computer.fuji.al0.components.Button
+                    style="@style/button_full_width"
+                    android:id="@+id/camera_activity_button_stop_video"
+                    android:text="@string/camera_activity_button_stop_video"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <LinearLayout style="@style/activity_menu_footer_line">
+                <computer.fuji.al0.components.Button
+                    style="@style/button_back"
+                    android:id="@+id/camera_activity_button_close"
+                    android:text="@string/close_symbol" />
+                <View style="@style/activity_menu_footer_spacer_small"/>
+                <computer.fuji.al0.components.Button
+                    style="@style/button_fill"
+                    android:id="@+id/camera_activity_button_take_photo"
+                    android:text="@string/camera_activity_button_take_photo" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

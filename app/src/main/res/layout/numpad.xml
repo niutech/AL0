@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/numpad_wrapper">
+    <LinearLayout
+        style="@style/numpad_line">
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_1"
+            style="@style/numpad_button_wrapper" />
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_2"
+            style="@style/numpad_button_wrapper" />
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_3"
+            style="@style/numpad_button_wrapper" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/numpad_line">
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_4"
+            style="@style/numpad_button_wrapper" />
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_5"
+            style="@style/numpad_button_wrapper" />
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_6"
+            style="@style/numpad_button_wrapper" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/numpad_line">
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_7"
+            style="@style/numpad_button_wrapper" />
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_8"
+            style="@style/numpad_button_wrapper" />
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_9"
+            style="@style/numpad_button_wrapper" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/numpad_line">
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_star"
+            style="@style/numpad_button_wrapper" />
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_0"
+            style="@style/numpad_button_wrapper" />
+        <computer.fuji.al0.components.NumpadButton
+            android:id="@+id/numpad_button_hash"
+            style="@style/numpad_button_wrapper" />
+    </LinearLayout>
+</LinearLayout>

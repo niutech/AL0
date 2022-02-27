@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/settings_tools_activity_wrapper"
+        style="@style/fill_until_footer"
+        android:paddingBottom="0dp">
+        <computer.fuji.al0.components.TextInputMovableCursor
+            android:id="@+id/settings_tools_activity_find_query_text_input"
+            style="@style/phone_contacts_find__text_input"
+            android:ellipsize="none"
+            android:visibility="gone"
+            />
+        <RelativeLayout
+            style="@style/settings_tools_activity_list_and_gradients_wrapper"
+            android:layout_below="@+id/settings_tools_activity_find_query_text_input">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/settings_tools_activity_menu_list"
+                style="@style/activity__menu_list"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:layout_alignParentBottom="true" />
+            <View android:id="@+id/settings_tools_activity_list_fade_up_down"
+                style="@style/fade_to_color5_up_down"
+                android:visibility="gone"/>
+            <View android:id="@+id/settings_tools_activity_list_fade_down_up"
+                style="@style/fade_to_color5_down_up__tall"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/constraint_footer_wrapper"
+        style="@style/constraint_footer_wrapper">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/settings_activity_tools_button_find"
+                android:text="@string/settings_tools_activity_button_find"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/settings_activity_tools_button_close"
+                android:text="@string/close_symbol" />
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/settings_activity_tools_button_set"
+                android:text="@string/settings_tools_activity_button_set"
+                android:visibility="gone"/>
+            <View style="@style/activity_menu_footer_spacer_small"
+                android:id="@+id/settings_activity_tools_button_set_divider"
+                android:visibility="gone"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button"
+                android:id="@+id/settings_activity_tools_button_set_nothing"
+                android:text="@string/settings_tools_activity_button_set_nothing"
+                android:visibility="gone"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/settings_activity_tools_button_all_apps"
+                android:text="@string/settings_tools_activity_button_all_apps"
+                android:visibility="gone"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/settings_activity_tools_button_open_app"
+                android:text="@string/settings_tools_activity_button_open_app"
+                android:visibility="gone"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_single_char"
+                android:id="@+id/settings_activity_tools_button_open_app_symbol"
+                android:text="@string/external_link_symbol"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+    <computer.fuji.al0.components.Keyboard
+        android:id="@+id/settings_tools_activity_find_keyboard"
+        style="@style/keyboard"
+        android:visibility="gone"/>
+</RelativeLayout>

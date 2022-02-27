@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/color_5</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <item name="android:statusBarColor">@color/color_5_alpha0</item>
+        <item name="android:navigationBarColor">@color/color_5_alpha0</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+
+        <!--
+        <item name="android:windowContentOverlay">@null</item>
+        -->
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@color/color_5</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">
+            shortEdges <!-- default, shortEdges, never -->
+        </item>
+
+    </style>
+</resources>

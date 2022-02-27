@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/constraint_wrapper_fill_until_footer"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout style="@style/constraint_wrapper_fill_until_footer__linear_layout">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/phone_contacts_list"
+                style="@style/phone_contacts__list" />
+            <View style="@style/fade_to_color5_up_down__tall" />
+            <View style="@style/fade_to_color5_down_up__tall" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/constraint_footer_wrapper"
+        style="@style/constraint_footer_wrapper"
+        tools:ignore="MissingConstraints">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/fragment_phone_contacts_button_new"
+                android:text="@string/fragment_phone_contacts_button_new" />
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/fragment_phone_contacts_button_find"
+                android:text="@string/fragment_phone_contacts_button_find" />
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/phone_activity_close_button"
+                android:text="@string/close_symbol" />
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button"
+                android:id="@+id/phone_activity_numpad_button"
+                android:text="@string/phone_activity_button_numpad" />
+            <View style="@style/activity_menu_footer_spacer"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button"
+                android:id="@+id/phone_activity_contacts_button"
+                android:text="@string/phone_activity_button_contacts" />
+            <View style="@style/activity_menu_footer_spacer"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button"
+                android:id="@+id/phone_activity_activity_button"
+                android:text="@string/phone_activity_button_activity" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

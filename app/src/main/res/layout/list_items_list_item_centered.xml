@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item">
+    <LinearLayout style="@style/list_item_wrapper_centered">
+        <TextView
+            android:id="@+id/list_items_list_item_is_marked"
+            style="@style/list_item_is_marked" />
+        <TextView
+            android:id="@+id/list_items_list_item_text"
+            style="@style/list_item_text"
+            android:text="List item" />
+    </LinearLayout>
+</LinearLayout>

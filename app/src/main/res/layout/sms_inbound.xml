@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/sms_inbound_wrapper">
+    <LinearLayout
+        style="@style/sms_header" >
+        <TextView
+            style="@style/sms_inbound_time"
+            android:id="@+id/date"
+            android:text="Monday, 11:23 pm"
+            android:textAllCaps="true"/>
+        <TextView
+            android:id="@+id/info_divider"
+            style="@style/sms_inbound_info"
+            android:text=" • "
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/info"
+            style="@style/sms_inbound_info"
+            android:text="info"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout style="@style/sms_inbound_body_wrapper">
+        <TextView
+            style="@style/sms_inbound_body_is_new"
+            android:id="@+id/body_is_new"
+            android:text="@string/notification_mark"/>
+        <TextView
+            style="@style/sms_inbound_body"
+            android:id="@+id/body"
+            android:text="Sms body"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/clock_fragment__wrapper">
+    <LinearLayout
+        style="@style/fill_until_footer"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            style="@style/text_input_centered"
+            android:id="@+id/fragment_clock_stopwatch_current_time_label"
+            />
+        <View style="@style/spacer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/constraint_footer_wrapper"
+        style="@style/constraint_footer_wrapper">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/fragment_clock_stopwatch_button_reset"
+                android:text="@string/fragment_clock_stopwatch_button_reset" />
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/fragment_clock_stopwatch_button_start"
+                android:text="@string/fragment_clock_stopwatch_button_start" />
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/fragment_clock_stopwatch_button_stop"
+                android:text="@string/fragment_clock_stopwatch_button_stop"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/clock_activity_close_button"
+                android:text="@string/close_symbol" />
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                android:id="@+id/clock_activity_alarm_button"
+                style="@style/button"
+                android:text="@string/clock_activity_button_clock" />
+            <View style="@style/activity_menu_footer_spacer"/>
+            <computer.fuji.al0.components.Button
+                android:id="@+id/clock_activity_stopwatch_button"
+                style="@style/button"
+                android:text="@string/clock_activity_button_stopwatch" />
+            <View style="@style/activity_menu_footer_spacer"/>
+            <computer.fuji.al0.components.Button
+                android:id="@+id/clock_activity_timer_button"
+                style="@style/button"
+                android:text="@string/clock_activity_button_timer" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

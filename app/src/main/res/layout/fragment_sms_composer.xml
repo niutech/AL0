@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    style="@style/sms_composer_fragment_wrapper">
+    <TextView
+        android:id="@+id/sms_composer_fragment_sms_label"
+        style="@style/sms_composer_fragment_sms_label" />
+    <!--
+    <com.simquat.phone.components.TextInput
+        android:id="@+id/sms_composer_fragment_sms_body"
+        style="@style/sms_composer_fragment_sms_body" />
+        -->
+    <computer.fuji.al0.components.TextInputMovableCursor
+        android:id="@+id/sms_composer_fragment_sms_body"
+        style="@style/sms_composer_fragment_sms_body" />
+    />
+    <computer.fuji.al0.components.Keyboard
+        android:id="@+id/sms_composer_fragment_keyboard"
+        style="@style/keyboard"/>
+</LinearLayout>

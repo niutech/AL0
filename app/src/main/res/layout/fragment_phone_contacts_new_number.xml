@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/fill_until_footer"
+        android:orientation="vertical"
+        android:gravity="center">
+        <computer.fuji.al0.components.TextInput
+            android:id="@+id/fragment_phone_contacts_new_text_input"
+            style="@style/phone_contacts_new_fragment__text_input"
+            android:ellipsize="start"
+            android:singleLine="true"/>
+        <TextView
+            style="@style/phone_contacts_new_input_label"
+            android:text="@string/phone_contacts_new_activity_label_number"
+            />
+        <View style="@style/spacer" />
+        <computer.fuji.al0.components.Numpad
+            android:id="@+id/fragment_phone_contacts_new_numpad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/activity_menu_footer_wrapper">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/phone_contacts_new_activity_button_close"
+                android:text="@string/close_contestual_symbol" />
+            <computer.fuji.al0.components.Spacer
+                style="@style/activity_menu_footer_spacer_small" />
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/phone_contacts_new_activity_enter_name_button"
+                android:text="@string/phone_contacts_new_activity_button_enter_name"
+                android:enabled="false"/>
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_single_char_wide"
+                android:id="@+id/phone_contacts_new_activity_button_delete"
+                android:text="@string/phone_contacts_new_activity_button_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

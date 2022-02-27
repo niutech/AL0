@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/fill_until_footer"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/calculator_activity_text_view"
+            android:layout_marginTop="32dp"
+            style="@style/text_input_right"
+            android:ellipsize="start"
+            android:singleLine="true"/>
+        <View style="@style/spacer" />
+        <computer.fuji.al0.components.Numpad
+            android:id="@+id/calculator_activity_numpad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/constraint_footer_wrapper"
+        style="@style/constraint_footer_wrapper">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/calculator_activity_button_close"
+                android:text="@string/close_symbol" />
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/calculator_activity_button_clear"
+                android:text="@string/calculator_activity_button_clear" />
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_single_char_wide"
+                android:id="@+id/calculator_activity_button_delete"
+                android:text="@string/delete_symbol" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

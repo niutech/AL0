@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/sms_wrapper">
+    <TextView
+        style="@style/sms_time"
+        android:id="@+id/sms_date"
+        android:text="Monday, 11:23 pm"
+        android:textAllCaps="true"/>
+    <TextView
+        style="@style/sms_body"
+        android:id="@+id/sms_body"
+        android:text="Sms body"/>
+</LinearLayout>

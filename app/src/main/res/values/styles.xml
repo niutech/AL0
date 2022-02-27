@@ -1,0 +1,1040 @@
+<resources>
+    <!-- Base application theme. -->
+    <!--
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/color_5</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <item name="android:statusBarColor">@color/color_5_alpha0</item>
+        <item name="android:navigationBarColor">@color/color_5_alpha0</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+
+        <!--
+        <item name="android:windowContentOverlay">@null</item>
+        -->
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@color/color_5</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!--
+         COMPONENTS
+         __________
+    -->
+
+    <!-- BUTTON -->
+    <style name="button" parent="typography_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <!--
+        <item name="android:layout_marginTop">-3dp</item>
+        <item name="android:layout_marginBottom">-3dp</item>
+        -->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:minWidth">24dp</item>
+        <!--
+        <item name="android:layout_marginLeft">-3dp</item>
+        <item name="android:layout_marginRight">-3dp</item>
+        -->
+    </style>
+
+    <style name="button_full_width" parent="button">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="button_fill" parent="button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="button_single_char" parent="button">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <style name="button_single_char_wide" parent="button_single_char">
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:background">@color/color_5_alpha0</item>
+    </style>
+
+    <style name="button_back" parent="button_single_char_wide">
+    </style>
+
+    <style name="button_squared" parent="button">
+        <item name="android:minWidth">40dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- TEXT INPUT -->
+    <style name="text_input" parent="typography_text_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <style name="text_input_centered" parent="text_input">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="text_input_right" parent="text_input">
+        <item name="android:gravity">right</item>
+    </style>
+
+    <!-- TITLE -->
+    <style name="title" parent="typography_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+
+    <!-- LIST ITEM -->
+    <style name="list_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="list_item_wrapper">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <!--
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        -->
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <style name="list_item_header" parent="list_item">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="list_item_header_wrapper" parent="list_item_wrapper">
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="list_item_header__title" parent="sms_time">
+        <!--
+        <item name="android:height">44dp</item>
+        -->
+    </style>
+
+    <style name="list_item_wrapper_centered" parent="list_item_wrapper">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="list_item_is_marked" parent="typography_list_item">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">•</item>
+        <item name="android:visibility">invisible</item>
+        <!--
+        <item name="android:layout_marginTop">-2dp</item>
+        <item name="android:layout_marginBottom">-1dp</item>
+        -->
+    </style>
+
+    <style name="list_item_text" parent="typography_list_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--
+        <item name="android:layout_marginTop">-2dp</item>
+        <item name="android:layout_marginBottom">-1dp</item>
+        -->
+    </style>
+
+    <!-- NUMPAD -->
+    <style name="numpad_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="numpad_line">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="numpad_button_wrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="numpad_button">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="numpad_button_number" parent="typography_numpad_button_number">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="numpad_button_letters" parent="typography_numpad_button_letters">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- KEYBOARD -->
+    <style name="keyboard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="keyboard_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="keyboard_lines">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="keyboard_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="keyboard_button_wrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="keyboard_button">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="keyboard_button_letter" parent="typography_keyboard_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- DIALOG -->
+    <style name="dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingTop">44dp</item>
+    </style>
+
+    <style name="dialog_scroll_wrapper" parent="fill_until_footer">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarSize">8dp</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="dialog_text" parent="typography_body">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+    </style>
+
+    <style name="dialog_footer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:padding">24dp</item>
+    </style>
+
+    <style name="dialog_button_action_right" parent="button_single_char_wide">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:minWidth">44dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="calendar_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="calendar_month_label" parent="button">
+        <!--
+        <item name="android:minHeight">44dp</item>
+        -->
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="calendar_days_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:columnCount">7</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="calendar_day_wrapper" parent="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="calendar_day" parent="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minWidth">40dp</item>
+        <!--
+        <item name="android:minHeight">44dp</item>
+        -->
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="calendar_day_light" parent="calendar_day">
+        <item name="android:textColor">@color/color_2</item>
+    </style>
+
+    <!-- Activity Menu Footer -->
+    <style name="activity_menu_footer_wrapper">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+    </style>
+
+    <style name="activity_menu_footer_columns_wrapper" parent="activity_menu_footer_wrapper">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="constraint_footer_wrapper" parent="activity_menu_footer_wrapper">
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+    <style name="activity_menu_footer_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+
+        <!--
+        <item name="android:paddingBottom">24dp</item>
+        -->
+    </style>
+
+    <style name="activity_menu_footer_column">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="activity_menu_footer_column_full_width" parent="activity_menu_footer_column">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="activity_menu_footer_spacer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="activity_menu_footer_spacer_small">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="activity_menu_footer_button_spacer" parent="button">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- -->
+    <style name="text_input_small" parent="typography_body">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        -->
+    </style>
+
+    <!-- Sms -->
+    <style name="sms_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <!--
+        <item name="android:paddingBottom">34dp</item>
+        -->
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="sms_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="sms_time" parent="typography_overline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="sms_body" parent="text_input_small">
+    </style>
+
+    <!--
+    OLD
+
+     -->
+    <style name="sms_info" parent="typography_caption">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--
+        <item name="android:layout_marginTop">2dp</item>
+        -->
+    </style>
+
+    <style name="sms_inbound_wrapper" parent="sms_wrapper">
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <style name="sms_inbound_time" parent="sms_time">
+        <item name="android:paddingLeft">24dp</item>
+    </style>
+
+    <style name="sms_inbound_body_wrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="sms_inbound_body" parent="sms_body">
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <style name="sms_inbound_body_is_new" parent="sms_inbound_body">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="sms_inbound_info" parent="sms_info">
+        <!--
+        <item name="android:paddingLeft">24dp</item>
+        -->
+    </style>
+
+    <style name="sms_outbound_wrapper" parent="sms_wrapper">
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="sms_outbound_time" parent="sms_time">
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="sms_outbound_body" parent="sms_body">
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="sms_outbound_info" parent="sms_info">
+        <item name="android:gravity">end</item>
+    </style>
+
+    <!-- Call -->
+    <style name="call_wrapper" parent="sms_wrapper">
+        <item name="android:paddingBottom">24dp</item>
+    </style>
+
+    <style name="call_header" parent="sms_header">
+        <item name="android:gravity">start</item>
+        <item name="android:paddingLeft">24dp</item>
+    </style>
+
+    <style name="call_time" parent="sms_time">
+    </style>
+
+    <style name="call_body" parent="sms_body">
+    </style>
+
+    <style name="call_info" parent="sms_info">
+    </style>
+
+    <style name="call_inbound_wrapper" parent="sms_inbound_wrapper">
+    </style>
+
+    <style name="call_inbound_time" parent="sms_inbound_time">
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <style name="call_inbound_body_wrapper" parent="sms_inbound_body_wrapper">
+    </style>
+
+    <style name="call_inbound_body" parent="sms_inbound_body">
+    </style>
+
+    <style name="call_inbound_body_is_new" parent="sms_inbound_body_is_new">
+    </style>
+
+    <style name="call_inbound_info" parent="sms_inbound_info">
+    </style>
+
+    <style name="call_outbound_wrapper" parent="sms_outbound_wrapper">
+    </style>
+
+    <style name="call_outbound_time" parent="sms_outbound_time">
+    </style>
+
+    <style name="call_outbound_body" parent="sms_outbound_body">
+    </style>
+
+    <style name="call_outbound_info" parent="sms_outbound_info">
+    </style>
+
+    <!--
+         ACTIVITIES
+         __________
+    -->
+
+    <style name="activity__status">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+    <style name="activity__status_item" parent="typography_caption">
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/color_1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="activity__menu_list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+
+    <!-- MainActivity -->
+    <style name="main_activity__wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- CallActivity -->
+    <style name="call_activity__wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="call_activity__call_info_wrapper">
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginBottom">136dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="call_activity__call_status_label" parent="typography_base">
+        <item name="android:textColor">@color/color_2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="call_activity__call_details_label" parent="typography_caption">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="centered_numpad">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>a
+    </style>
+
+    <style name="call_activity__call_numpad" parent="centered_numpad">
+        <item name="android:layout_marginBottom">24dp</item>a
+    </style>
+
+    <!-- TappedActivity -->
+    <style name="tabbed_activity__wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="tabbed_activity__tab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--
+        <item name="android:layout_marginBottom">56dp</item>
+        -->
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- PhoneActivity -->
+    <style name="phone_activity__wrapper" parent="tabbed_activity__wrapper">
+    </style>
+
+    <style name="phone_activity__tab" parent="tabbed_activity__tab">
+    </style>
+
+    <!-- PhoneContactsFindActivity -->
+    <style name="phone_contacts_find__text_input" parent="text_input">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="phone_contacts_find__list_wrapper" parent="fill_until_keyboard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">72dp</item>
+        <item name="android:paddingBottom">40dp</item>
+        <!--
+        <item name="android:layout_marginBottom">280dp</item>
+        -->
+    </style>
+
+    <!-- PhoneContactActivity -->
+    <style name="phone_contact_activity__activity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="phone_contact__number" parent="typography_overline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:paddingTop">32dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+    </style>
+
+    <style name="phone_contact__title" parent="typography_text_input">
+        <item name="layout_constraintTop_toBottomOf">@id/phone_contact_activity_number</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:translationY">-8dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="phone_contact__label_no_activity" parent="call_activity__call_status_label">
+        <item name="layout_constraintTop_toBottomOf">@id/phone_contact_activity_title</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="phone_contact_activity__upper_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <!--
+        <item name="layout_constraintBottom_toTopOf">@id/phone_contact_activity__bottom_wrapper</item>
+        -->
+        <item name="layout_constraintBottom_toBottomOf">@id/phone_contact_activity__upper_wrapper_bottom_position</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="phone_contact_activity__list_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintTop_toBottomOf">@id/phone_contact_activity_title</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:translationY">-16dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="phone_contact_activity__list" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">44dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarSize">8dp</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="phone_contact_activity__bottom_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="phone_contact_activity_sms_composer" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <!-- Clock -->
+    <style name="clock_activity_with_numpad_top_wrapper" parent="fill_until_footer">
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Calendar -->
+    <style name="calendar_activity_calendar_wrapper" parent="fill_until_footer_double_line">
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <!--
+        <item name="android:paddingBottom">44dp</item>
+        -->
+        <item name="android:paddingBottom">56dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Fragments -->
+    <!-- PhoneContactsFragment -->
+    <style name="phone_contacts__list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingTop">44dp</item>
+        <item name="android:paddingBottom">44dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarSize">8dp</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="phone_contacts__footer" parent="activity_menu_footer_wrapper">
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+
+    <style name="camera_activity__wrapper" parent="phone_activity__wrapper">
+    </style>
+
+    <style name="camera_activity__camera_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">24dp</item>
+    </style>
+
+    <!-- PhoneContactsNewActivity fragments -->
+    <style name="phone_contacts_new_input_label" parent="call_activity__call_status_label">
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="phone_contacts_new_fragment__text_input" parent="text_input_centered">
+        <item name="android:layout_marginTop">24dp</item>
+    </style>
+
+    <!-- PhoneNumpad fragment -->
+    <style name="phone_numpad_fragment__text_input" parent="text_input_centered">
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+    <!-- SmsComposer Fragment -->
+    <style name="sms_composer_fragment_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="sms_composer_fragment_sms_label" parent="sms_inbound_time">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <style name="sms_composer_fragment_sms_body" parent="sms_outbound_body">
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- PhoneActivityFragment -->
+    <style name="phone_activity_activity__list_wrapper" parent="fill_until_footer">
+        <!--
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        -->
+    </style>
+
+    <style name="phone_activity_activity__list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">44dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarSize">8dp</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <!-- PhoneNumpad fragment -->
+    <style name="clock_fragment__wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">32dp</item>
+    </style>
+
+    <!-- ClockTimerFragment -->
+    <!-- ClockStopwatchFragment -->
+    <style name="clock_timer_fragment__wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+    <style name="clock_timer_fragment__list_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="clock_timer_fragment__list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">44dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarSize">8dp</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <!-- Settings Logo -->
+    <style name="settings_logo_wrapper">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="settings_logo_layout_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="settings_logo_left_wrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="settings_logo_right_wrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="settings_logo_text_mountain" parent="typography_logo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="settings_logo_text_name" parent="typography_logo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+
+    <style name="settings_logo_text_version" parent="typography_caption">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="settings_tools_activity_list_and_gradients_wrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintTop_toBottomOf">@+id/settings_tools_activity_find_query_text_input</item>
+    </style>
+
+    <style name="about_phone_statistic_wrapper" parent="sms_wrapper">
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <style name="about_phone_statistic_header" parent="sms_header">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="about_phone_statistic_body" parent="sms_body">
+    </style>
+
+    <style name="about_phone_statistic__divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/list_item_divider</item>
+    </style>
+
+    <!-- Utils -->
+    <style name="fill_until_keyboard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <!--
+        <item name="android:layout_marginBottom">216dp</item>
+        -->
+        <item name="android:layout_marginBottom">224dp</item>
+    </style>
+
+    <style name="fill_until_footer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginBottom">68dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="constraint_wrapper_fill_until_footer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toTopOf">@id/constraint_footer_wrapper</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="constraint_wrapper_fill_until_footer__linear_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="fill_until_footer_double_line" parent="fill_until_footer">
+        <item name="android:layout_marginBottom">112dp</item>
+    </style>
+
+    <style name="fill_until_footer_triple_line" parent="fill_until_footer">
+        <item name="android:layout_marginBottom">156dp</item>
+    </style>
+
+    <style name="spacer">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="fade_to_color5_base">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="fade_to_color5_up_down" parent="fade_to_color5_base">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">@drawable/fade_to_color5_up_down</item>
+    </style>
+
+    <style name="fade_to_color5_up_down__tall" parent="fade_to_color5_up_down">
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="fade_to_color5_down_up" parent="fade_to_color5_base">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/fade_to_color5_down_up</item>
+    </style>
+
+    <style name="fade_to_color5_down_up__tall" parent="fade_to_color5_down_up">
+        <item name="android:layout_height">44dp</item>
+    </style>
+</resources>

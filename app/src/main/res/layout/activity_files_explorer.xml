@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/file_explorer_activity_wrapper">
+    <RelativeLayout style="@style/fill_until_footer_double_line">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/files_explorer_activity_list"
+            style="@style/phone_contacts__list" />
+        <View style="@style/fade_to_color5_up_down" />
+        <View style="@style/fade_to_color5_down_up__tall" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/files_explorer_activity_image_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <computer.fuji.al0.components.VideoViewClickable
+        android:id="@+id/files_explorer_activity_video_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true" />
+    <LinearLayout
+        android:id="@+id/files_explorer_activity_wrapper"
+        style="@style/constraint_footer_wrapper">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/files_explorer_activity_button_delete"
+                android:text="@string/files_explorer_activity_button_delete" />
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/files_explorer_activity_button_close"
+                android:text="@string/close_symbol" />
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/files_explorer_activity_button_open"
+                android:text="@string/files_explorer_activity_button_open" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

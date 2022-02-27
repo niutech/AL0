@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/numpad_button_wrapper">
+    <LinearLayout style="@style/numpad_button">
+        <TextView
+            android:id="@+id/numpad_button_number"
+            style="@style/numpad_button_number" />
+        <TextView
+            android:id="@+id/numpad_button_letters"
+            style="@style/numpad_button_letters"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+</FrameLayout>

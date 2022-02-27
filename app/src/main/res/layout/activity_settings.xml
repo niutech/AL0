@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/settings_activity_wrapper"
+        style="@style/fill_until_footer"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+        <View style="@style/spacer" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/settings_activity_menu_list"
+            style="@style/activity__menu_list"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:clipToPadding="true"
+            android:clipChildren="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/constraint_footer_wrapper"
+        style="@style/constraint_footer_wrapper">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/settings_activity_button_close"
+                android:text="@string/close_symbol" />
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/settings_activity_button_keep_lock"
+                android:text="@string/settings_activity_menu_keep_lock"
+                />
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/settings_activity_button_set"
+                android:text="@string/settings_activity_button_set"
+                android:visibility="gone"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/settings_activity_button_down"
+                android:text="@string/settings_activity_button_down"
+                android:visibility="gone"/>
+            <View style="@style/activity_menu_footer_spacer_small"
+                android:id="@+id/settings_activity_button_up_down_spacer"
+                android:visibility="gone"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button"
+                android:id="@+id/settings_activity_button_up"
+                android:text="@string/settings_activity_button_up"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

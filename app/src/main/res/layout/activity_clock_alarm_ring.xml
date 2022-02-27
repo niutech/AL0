@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/fill_until_footer"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="24dp">
+        <TextView
+            style="@style/text_input_centered"
+            android:text="@string/clock_alarm_ring_activity_label_alarm" />
+        <TextView
+            android:id="@+id/clock_alarm_ring_activity_label_time"
+            style="@style/call_activity__call_details_label"
+             />
+        <View style="@style/spacer" />
+
+    </LinearLayout>
+    <LinearLayout style="@style/activity_menu_footer_wrapper">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/clock_alarm_ring_activity_button_stop"
+                android:text="@string/clock_alarm_ring_activity_button_stop" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

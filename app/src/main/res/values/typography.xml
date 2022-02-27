@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="typography_base">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:letterSpacing">-0.0241</item>
+        <item name="android:textColor">@color/color_1</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="typography_base24" parent="typography_base">
+        <item name="android:textSize">24dp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- TITLE -->
+    <style name="typography_title" parent="typography_base" >
+        <item name="android:textSize">34dp</item>
+        <item name="android:lineSpacingExtra">7dp</item>
+        <item name="android:letterSpacing">0.0108</item>
+    </style>
+
+    <!-- LOGO -->
+    <style name="typography_logo" parent="typography_base" >
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:lineSpacingMultiplier">0.7</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- BODY -->
+    <style name="typography_body" parent="typography_base" >
+    </style>
+
+    <!-- BUTTON -->
+    <style name="typography_button" parent="typography_base">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textColor">@color/color_1</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:letterSpacing">-0.0158</item>
+    </style>
+
+    <!-- TEXT INPUT -->
+    <style name="typography_text_input" parent="typography_base" >
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">34dp</item>
+        <item name="android:lineSpacingExtra">7dp</item>
+        <item name="android:letterSpacing">0.0108</item>
+    </style>
+
+    <!-- LIST ITEM -->
+    <style name="typography_list_item" parent="typography_base">
+        <item name="android:lineSpacingExtra">0dp</item>
+    </style>
+
+    <!-- OVERLINE -->
+    <style parent="typography_base" name="typography_overline" >
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/color_2</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">-0.0158</item>
+        <item name="android:textAllCaps">true</item>
+            </style>
+
+    <!-- CAPTION -->
+    <style parent="typography_base" name="typography_caption" >
+        <item name="android:fontFamily">@font/inter_semibolditalic</item>
+        <item name="android:textColor">@color/color_2</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- KEYBOARD -->
+    <style parent="typography_base" name="typography_keyboard_button" >
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/color_1</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- NUMPAD -->
+    <style name="typography_numpad_button_number" parent="typography_base">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/color_1</item>
+        <item name="android:textSize">34dp</item>
+        <item name="android:lineSpacingExtra">7dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    <style parent="typography_base" name="typography_numpad_button_letters" >
+        <item name="android:fontFamily">@font/inter_semibolditalic</item>
+        <item name="android:textColor">@color/color_2</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+</resources>

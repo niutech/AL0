@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="computer.fuji.al0.activities.LockScreenActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/constraint_wrapper_fill_until_footer"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            style="@style/constraint_wrapper_fill_until_footer__linear_layout">
+            <View style="@style/spacer"/>
+            <computer.fuji.al0.components.Numpad
+                android:id="@+id/call_activity_numpad"
+                style="@style/call_activity__call_numpad"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/constraint_footer_wrapper"
+        style="@style/constraint_footer_wrapper"
+        tools:ignore="MissingConstraints">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/lock_screen_activity_button_unlock_invisible"
+                android:text="@string/lock_screen_activity_button_unlock"
+                android:visibility="invisible"/>
+        </LinearLayout>
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_full_width"
+                android:id="@+id/lock_screen_activity_button_unlock"
+                android:text="@string/lock_screen_activity_button_unlock" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

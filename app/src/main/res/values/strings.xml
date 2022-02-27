@@ -1,0 +1,368 @@
+<resources>
+    <string name="app_name" translatable="false">AL0</string>
+
+    <!-- MainActivity -->
+    <string name="main_activity_label" translatable="false">MainActivity</string>
+    <string name="main_activity_status_battery" translatable="false">▲</string>
+    <string name="main_activity_status_battery_almost_empty" translatable="false">△</string>
+    <string name="main_activity_status_battery_empty" translatable="false">⚠</string>
+    <string name="main_activity_status_battery_charging" translatable="false">~</string>
+    <string name="main_activity_status_signal_no_sim" translatable="false">NO SIM</string>
+    <string name="main_activity_status_signal_airplane_mode">AIRPLANE MODE</string>
+    <string name="main_activity_status_silent_mode">SILENT</string>
+
+    <string name="main_activity_menu_list_tools_title">Tools</string>
+    <string name="main_activity_menu_list_apps_title">Apps</string>
+    <string name="main_activity_menu_list_phone">Phone</string>
+    <string name="main_activity_menu_list_calendar">Calendar</string>
+    <string name="main_activity_menu_list_clock">Clock</string>
+    <string name="main_activity_menu_list_camera">Camera</string>
+    <string name="main_activity_menu_list_torch">Torch</string>
+    <string name="main_activity_menu_list_hotspot">Hotspot</string>
+    <string name="main_activity_menu_list_calculator">Calculator</string>
+    <string name="main_activity_menu_list_settings">Settings</string>
+    <!-- MainActivity Intro Step 1 -->
+    <string name="main_activity_intro_step1_title">1/4 – Welcome.</string>
+    <string name="main_activity_intro_step1_body">AL0 is an application launcher designed to declutter your smartphone.
+        \n\nFollow the next screens to setup and use AL0.
+    </string>
+    <string name="main_activity_intro_step1_continue_button">Continue</string>
+    <!-- MainActivity Intro Step 2 -->
+    <string name="main_activity_intro_step2_title">2/4 – A quiet tool.</string>
+    <string name="main_activity_intro_step2_body">Notifications are annoying, addictive and invasive. AL0 uses Notification access to quiet them.
+        \n\nDo you want to grant Notification access to AL0?
+    </string>
+    <string name="main_activity_intro_step2_yes_button">Yes</string>
+    <string name="main_activity_intro_step2_no_button">No</string>
+    <!-- MainActivity Intro Step 3 -->
+    <string name="main_activity_intro_step3_title">3/4 – Your phone.</string>
+    <string name="main_activity_intro_step3_body">AL0 turns your smartphone into a minimalist device that supports phone calls, sms and a few other features.
+        \n\nTo make AL0 works correctly it must be your default phone and messaging app.
+        \n\nDo you want AL0 to be the default phone and messaging app?
+    </string>
+    <string name="main_activity_intro_step3_yes_button">Yes</string>
+    <string name="main_activity_intro_step3_no_button">No</string>
+    <!-- MainActivity Intro Step 4 -->
+    <string name="main_activity_intro_step4_title">4/4 – Essential mode.</string>
+    <string name="main_activity_intro_step4_body">AL0 do one thing at a time, activate pin screen to keep external running apps from interfering your experience.
+        \n\nDo you want to pin screen AL0?
+    </string>
+    <string name="main_activity_intro_step4_yes_button">Yes</string>
+    <string name="main_activity_intro_step4_no_button">No</string>
+
+    <!-- DialerActivity -->
+    <string name="dialer_activity_label" translatable="false">DialerActivity</string>
+
+    <!-- CallActivity -->
+    <string name="call_activity_label" translatable="false">CallActivity</string>
+    <string name="call_activity_label_out_calling">↖ Calling…</string>
+    <string name="call_activity_label_in_calling">↘ Incoming Call</string>
+    <string name="call_activity_label_in_call">In Call</string>
+    <string name="call_activity_label_in_call_in">↘ In Call</string>
+    <string name="call_activity_label_in_call_out">↖ In Call</string>
+    <string name="call_activity_button_answer">Answer</string>
+    <string name="call_activity_button_numpad">Numpad</string>
+    <string name="call_activity_button_speaker">Speaker</string>
+    <string name="call_activity_button_bluetooth">Bluetooth</string>
+    <string name="call_activity_button_mute">Mute</string>
+    <string name="call_activity_button_silent">Silent</string>
+    <string name="call_activity_button_hangup">Hangup</string>
+
+    <!-- PhoneContactsNewActivity -->
+    <string name="phone_contacts_new_activity_label" translatable="false">PhoneContactsNewActivity</string>
+    <string name="phone_contacts_new_activity_label_number">Enter number</string>
+    <string name="phone_contacts_new_activity_label_name">Enter name</string>
+    <string name="phone_contacts_new_activity_button_cancel">Cancel</string>
+    <string name="phone_contacts_new_activity_button_enter_name">Enter Name</string>
+    <string name="phone_contacts_new_activity_button_save">Save</string>
+    <string name="phone_contacts_new_activity_button_delete" translatable="false">⌫</string>
+
+    <!-- PhoneActivity -->
+    <string name="phone_activity_label" translatable="false">PhoneActivity</string>
+    <string name="phone_activity_button_numpad">Numpad</string>
+    <string name="phone_activity_button_contacts">Contacts</string>
+    <string name="phone_activity_button_activity">Activity</string>
+
+    <!-- PhoneContactActivity -->
+    <string name="phone_contact_activity_label" translatable="false">PhoneContactActivity</string>
+    <string name="phone_contact_activity_button_back">Back</string>
+    <string name="phone_contact_activity_button_add_contact">Add Contact</string>
+    <string name="phone_contact_activity_button_delete_contact">Delete Contact</string>
+    <string name="phone_contact_activity_button_sms">Sms</string>
+    <string name="phone_contact_activity_button_call">Call</string>
+    <string name="phone_contact_activity_button_delete_item">Delete</string>
+    <string name="phone_contact_activity_button_delete_all_items">Delete All</string>
+    <string name="phone_contact_activity_button_selected_sms_copy">Copy</string>
+    <string name="phone_contact_activity_time_now">NOW</string>
+    <string name="phone_contact_activity_time_today">TODAY</string>
+    <string name="phone_contact_activity_label_new_contact">Unknown contact</string>
+    <string name="phone_contact_activity_label_no_activity">No recent activity</string>
+    <!-- PhoneContactActivity dialogs -->
+    <string name="phone_contact_activity_dialog_delete_item_title">Delete.</string>
+    <string name="phone_contact_activity_dialog_delete_item_body">Do you want to delete the selected item?</string>
+    <string name="phone_contact_activity_dialog_delete_all_title">Delete.</string>
+    <string name="phone_contact_activity_dialog_delete_all_body">Do you want to delete all the items?</string>
+    <string name="phone_contact_activity_dialog_delete_contact_title">Delete.</string>
+    <string name="phone_contact_activity_dialog_delete_contact_body">Do you want to delete the selected contact?</string>
+    <string name="phone_contact_activity_dialog_delete_button">Delete</string>
+    <string name="phone_contact_activity_dialog_cancel_button">Cancel</string>
+
+    <!-- ClockActivity -->
+    <string name="clock_activity_label" translatable="false">ClockActivity</string>
+    <string name="clock_activity_button_clock">Alarm</string>
+    <string name="clock_activity_button_stopwatch">Stopwatch</string>
+    <string name="clock_activity_button_timer">Timer</string>
+
+    <!-- ClockSetAlarmActivity -->
+    <string name="clock_set_alarm_activity_label" translatable="false">ClockSetAlarmActivity</string>
+    <string name="clock_set_alarm_activity_button_set">Set</string>
+    <string name="clock_set_alarm_activity_button_cancel">Cancel</string>
+    <string name="clock_set_alarm_activity_button_delete" translatable="false">⌫</string>
+    <string name="clock_set_alarm_activity_postfix_am" translatable="false">&#160;AM</string>
+    <string name="clock_set_alarm_activity_postfix_pm" translatable="false">&#160;PM</string>
+
+    <!-- ClockAlarmRingActivity -->
+    <string name="clock_alarm_ring_activity_label_alarm">Alarm</string>
+    <string name="clock_alarm_ring_activity_button_stop">Stop</string>
+
+    <!-- ClockTimerAddTimerActivity -->
+    <string name="clock_timer_add_timer_activity_no_timer_set">No timer set</string>
+    <string name="clock_timer_add_timer_activity_button_start">Start</string>
+    <string name="clock_timer_add_timer_activity_button_cancel">Cancel</string>
+
+    <!-- ClockTimerRingActivity -->
+    <string name="clock_timer_ring_activity_label_timer">Timer</string>
+    <string name="clock_timer_ring_activity_button_stop">Stop</string>
+
+    <!-- CameraActivity -->
+    <string name="camera_activity_button_take_photo">Take photo</string>
+    <string name="camera_activity_button_take_video">Take video</string>
+    <string name="camera_activity_button_stop_video">Stop video</string>
+    <string name="camera_activity_button_use_front_camera">Use front camera</string>
+    <string name="camera_activity_button_use_back_camera">Use back camera</string>
+    <string name="camera_activity_button_flash_auto">Flash auto</string>
+    <string name="camera_activity_button_flash_no">No Flash</string>
+
+    <!-- CalculatorActivity -->
+    <string name="calculator_activity_button_clear">Clear</string>
+    <string name="calculator_activity_error_message">Error</string>
+
+    <!-- CalendarActivity -->
+    <string name="calendar_activity_button_previous_month_prefix" translatable="false">←&#160;</string>
+    <string name="calendar_activity_button_next_month_prefix" translatable="false">→&#160;</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_activity_menu_about_phone">About this phone</string>
+    <string name="settings_activity_menu_sound">Sound &amp; notifications</string>
+    <string name="settings_activity_menu_camera">Camera settings</string>
+    <string name="settings_activity_menu_hotspot">Hotspot</string>
+    <string name="settings_activity_menu_keep_lock">Essential mode</string>
+    <string name="settings_activity_menu_all_settings">All settings</string>
+    <string name="settings_activity_menu_dark_mode">Dark mode</string>
+    <string name="settings_activity_menu_settings_tools">Tools &amp; apps settings</string>
+    <string name="settings_activity_menu_settings_tools_focus">Tools settings</string>
+    <string name="settings_activity_menu_exit">Exit AL0</string>
+    <string name="settings_activity_button_set">Set</string>
+    <string name="settings_activity_button_up">Up</string>
+    <string name="settings_activity_button_down">Down</string>
+    <!-- SettingsSound -->
+    <string name="settings_activity_menu_sound_phone_volume">Phone Volume</string>
+    <string name="settings_activity_menu_sound_ringtone">Ringtone</string>
+    <string name="settings_activity_menu_sound_alarm">Alarm</string>
+    <string name="settings_activity_menu_sound_notifications">Notifications</string>
+    <string name="settings_activity_menu_sound_silent_mode">Do not disturb</string>
+    <string name="settings_activity_menu_sound_vibration">Vibration</string>
+    <string name="settings_activity_menu_standard_apps_title">Standard mode apps notifications</string>
+    <string name="settings_activity_menu_sound_mute_standard_app">Silent notifications</string>
+    <string name="settings_activity_menu_sound_hide_notification_standard_app">Hide notification</string>
+    <!--SettingsSoundPhoneVolume -->
+    <string name="settings_activity_menu_sound_phone_volume_ringtone">Ringtone Volume</string>
+    <string name="settings_activity_menu_sound_phone_volume_alarm">Alarm Volume</string>
+    <string name="settings_activity_menu_sound_phone_volume_sound">System Volume</string>
+    <string name="settings_activity_menu_sound_phone_volume_voice">Voice Call Volume</string>
+    <!-- SettingsCamera -->
+    <string name="settings_activity_menu_camera_color">Color</string>
+    <string name="settings_activity_menu_camera_front_camera">Front Camera</string>
+    <string name="settings_activity_menu_camera_no_flash">No flash</string>
+    <string name="settings_activity_menu_camera_explore">Files</string>
+
+    <!-- FilesExplorerActivity -->
+    <string name="files_explorer_activity_button_open">Open</string>
+    <string name="files_explorer_activity_button_delete">Delete</string>
+    <string name="files_explorer_activity_dialog_delete_item_title">Delete.</string>
+    <string name="files_explorer_activity_dialog_delete_item_body">Do you want to delete the selected item?</string>
+    <string name="files_explorer_activity_dialog_delete_button">Delete</string>
+    <string name="files_explorer_activity_dialog_cancel_button">Cancel</string>
+
+    <!-- LockScreenActivity -->
+    <string name="lock_screen_activity_button_unlock">Unlock</string>
+
+    <!-- ToolsSettingsActivity -->
+    <string name="settings_tools_activity_focus_tools_label">Essential mode tools</string>
+    <string name="settings_tools_activity_normal_mode_label">Standard mode apps</string>
+    <string name="settings_tools_activity_use_prefix">Use</string>
+    <string name="settings_tools_activity_empty_app_option">Nothing</string>
+    <string name="settings_tools_activity_button_set">Set</string>
+    <string name="settings_tools_activity_button_set_nothing">Remove</string>
+    <string name="settings_tools_activity_button_find">Find</string>
+    <string name="settings_tools_activity_keyboard_cancel">Cancel</string>
+    <string name="settings_tools_activity_set_app">Set app #</string>
+    <string name="settings_tools_activity_button_all_apps">Open app</string>
+    <string name="settings_tools_activity_button_open_app">Open</string>
+    <string name="settings_tools_activity_set_app_locked">Deselect a tool to add an app.</string>
+
+    <!-- AboutPhoneActivity -->
+    <string name="about_phone_activity_app_version_label">AL0 version</string>
+    <string name="about_phone_activity_phone_manufacturer_label">Phone manufacturer</string>
+    <string name="about_phone_activity_phone_model_label">Phone model</string>
+    <string name="about_phone_activity_android_version_label">Android version</string>
+
+    <!-- Fragments -->
+    <!-- PhoneNumpad -->
+    <string name="fragment_phone_numpad_button_sms">Sms</string>
+    <string name="fragment_phone_numpad_button_call">Call</string>
+    <string name="fragment_phone_numpad_button_delete" translatable="false">⌫</string>
+    <!-- PhoneContacts -->
+    <string name="fragment_phone_contacts_button_find">Find</string>
+    <string name="fragment_phone_contacts_button_new">New</string>
+    <!-- PhoneActivity -->
+    <string name="fragment_phone_activity_call_from">↘ Call from</string>
+    <string name="fragment_phone_activity_call_to">↖ Call to</string>
+    <string name="fragment_phone_activity_call_detail_missed">missed</string>
+    <string name="fragment_phone_activity_sms_from">↘ Sms from</string>
+    <string name="fragment_phone_activity_sms_to">↖ Sms to</string>
+    <!-- SmsComposer -->
+    <string name="fragment_sms_composer_button_send">Send</string>
+    <string name="fragment_sms_composer_label_message">Message</string>
+    <string name="fragment_sms_composer_label_sending">Sending…</string>
+    <string name="fragment_sms_composer_label_send_error_generic">Error, message not sent</string>
+    <string name="fragment_sms_composer_label_send_error_no_service">No service error, message not sent</string>
+    <string name="fragment_sms_composer_label_send_error_pdu">PDU error, message not sent</string>
+    <string name="fragment_sms_composer_label_send_error_radio_off">No service error, message not sent</string>
+    <!-- ClockAlarm -->
+    <string name="fragment_clock_clock_button_set_time">Set Time</string>
+    <string name="fragment_clock_clock_button_set">Set</string>
+    <string name="fragment_clock_clock_button_delete">Delete</string>
+    <string name="fragment_clock_clock_no_alarm_set">No Alarm Set</string>
+    <string name="fragment_clock_clock_alarm_set_label">Alarm at</string>
+    <!-- ClockStopwatch -->
+    <string name="fragment_clock_stopwatch_button_start">Start</string>
+    <string name="fragment_clock_stopwatch_button_stop">Stop</string>
+    <string name="fragment_clock_stopwatch_button_reset">Reset</string>
+    <!-- ClockTimer -->
+    <string name="fragment_clock_timer_button_add">Add</string>
+    <string name="fragment_clock_timer_button_delete">Delete</string>
+
+    <!-- DIALOG -->
+    <!-- All Phone Permissions -->
+    <string name="dialog_all_phone_sms_contacts_permissions_title">Cannot access to phone</string>
+    <string name="dialog_all_phone_sms_contacts_permissions_body">To access Phone grant the following permissions:\n</string>
+    <string name="dialog_all_phone_sms_contacts_permissions_body_permission_phone">\n– Phone</string>
+    <string name="dialog_all_phone_sms_contacts_permissions_body_permission_sms">\n– Sms</string>
+    <string name="dialog_all_phone_sms_contacts_permissions_body_permission_contacts">\n– Contacts</string>
+    <string name="dialog_all_phone_sms_contacts_permissions_body_permission_call_logs">\n– Call logs</string>
+    <string name="dialog_all_phone_sms_contacts_permissions_ok_button">Ok</string>
+    <string name="dialog_all_phone_sms_contacts_permissions_cancel_button">Cancel</string>
+    <!-- Camera Permissions -->
+    <string name="dialog_all_camera_permissions_title">Cannot access to Camera</string>
+    <string name="dialog_all_camera_permissions_body">To access Camera grant the following permissions:\n</string>
+    <string name="dialog_all_camera_permissions_body_permission_camera">\n– Camera</string>
+    <string name="dialog_all_camera_permissions_body_permission_microphone">\n– Microphone</string>
+    <string name="dialog_all_camera_permissions_body_permission_storage">\n– Storage</string>
+    <!-- Flash Light Permissions -->
+    <string name="dialog_all_flash_light_permissions_title">Cannot access to Torch</string>
+    <string name="dialog_all_flash_light_permissions_body">To access Torch grant the following permissions:\n</string>
+    <string name="dialog_all_flash_light_permissions_body_permission_camera">\n– Camera</string>
+    <!-- Dialer default app permission -->
+    <string name="dialog_default_phone_and_messaging_app_permissions_title">Cannot access to phone</string>
+    <string name="dialog_default_phone_and_messaging_app_permissions_body">To access Phone grant the following settings: \n</string>
+    <string name="dialog_default_phone_and_messaging_app_permissions_body_dialer">\n– set AL0 the default Phone app</string>
+    <string name="dialog_default_phone_and_messaging_app_permissions_body_messaging_app">\n– set AL0 the default SMS app</string>
+    <!-- File Explorer permissions -->
+    <string name="dialog_all_storage_permissions_title">Cannot access to Files</string>
+    <string name="dialog_all_storage_permissions_body">To access Files grant the following permissions:\n</string>
+    <string name="dialog_all_storage_permissions_body_permission_storage">\n– Storage</string>
+
+    <!-- NUMPAD -->
+    <string name="numpad_button_1_number" translatable="false">1</string>
+    <string name="numpad_button_1_letters" translatable="false"></string>
+    <string name="numpad_button_2_number" translatable="false">2</string>
+    <string name="numpad_button_2_letters" translatable="false">abc</string>
+    <string name="numpad_button_3_number" translatable="false">3</string>
+    <string name="numpad_button_3_letters" translatable="false">def</string>
+    <string name="numpad_button_4_number" translatable="false">4</string>
+    <string name="numpad_button_4_letters" translatable="false">ghi</string>
+    <string name="numpad_button_5_number" translatable="false">5</string>
+    <string name="numpad_button_5_letters" translatable="false">jkl</string>
+    <string name="numpad_button_6_number" translatable="false">6</string>
+    <string name="numpad_button_6_letters" translatable="false">mno</string>
+    <string name="numpad_button_7_number" translatable="false">7</string>
+    <string name="numpad_button_7_letters" translatable="false">pqrs</string>
+    <string name="numpad_button_8_number" translatable="false">8</string>
+    <string name="numpad_button_8_letters" translatable="false">tuv</string>
+    <string name="numpad_button_9_number" translatable="false">9</string>
+    <string name="numpad_button_9_letters" translatable="false">wxyz</string>
+    <string name="numpad_button_star_number" translatable="false">*</string>
+    <string name="numpad_button_star_letters" translatable="false"></string>
+    <string name="numpad_button_0_number" translatable="false">0</string>
+    <string name="numpad_button_0_letters" translatable="false">+</string>
+    <string name="numpad_button_hash_number" translatable="false">#</string>
+    <string name="numpad_button_hash_letters" translatable="false"></string>
+    <string name="numpad_button_AM_number" translatable="false">AM</string>
+    <string name="numpad_button_AM_letters" translatable="false"></string>
+    <string name="numpad_button_PM_number" translatable="false">PM</string>
+    <string name="numpad_button_PM_letters" translatable="false"></string>
+
+    <string name="numpad_button_clear_number" translatable="false">C</string>
+    <string name="numpad_button_clear_letters" translatable="false"></string>
+    <string name="numpad_button_plus_minus_number" translatable="false">±</string>
+    <string name="numpad_button_plus_minus_letters" translatable="false"></string>
+    <string name="numpad_button_percent_number" translatable="false">%</string>
+    <string name="numpad_button_percent_letters" translatable="false"></string>
+    <string name="numpad_button_division_number" translatable="false">÷</string>
+    <string name="numpad_button_division_letters" translatable="false"></string>
+    <string name="numpad_button_multiplication_number" translatable="false">×</string>
+    <string name="numpad_button_multiplication_letters" translatable="false"></string>
+    <string name="numpad_button_minus_number" translatable="false">−</string>
+    <string name="numpad_button_minus_letters" translatable="false"></string>
+    <string name="numpad_button_plus_number" translatable="false">+</string>
+    <string name="numpad_button_plus_letters" translatable="false"></string>
+    <string name="numpad_button_equal_number" translatable="false">=</string>
+    <string name="numpad_button_equal_letters" translatable="false"></string>
+    <string name="numpad_button_comma_number" translatable="false">.</string>
+    <string name="numpad_button_comma_letters" translatable="false"></string>
+    <string name="numpad_button_delete_number" translatable="false">⌫</string>
+    <string name="numpad_button_delete_letters" translatable="false"></string>
+
+    <!-- Keyboard -->
+    <string name="keyboard_button_left_numbers" translatable="false">123</string>
+    <string name="keyboard_button_left_letters" translatable="false">ABC</string>
+    <string name="keyboard_button_center_space">Space</string>
+    <string name="keyboard_button_right_cancel">Cancel</string>
+    <string name="keyboard_button_paste">Paste</string>
+    
+    <!-- Call -->
+    <string name="call_inbound_body">↘ Call</string>
+    <string name="call_outbound_body">↖ Call</string>
+    <string name="call_info_missed">missed</string>
+
+    <!-- Common -->
+    <string name="long_line_spaced" translatable="false">\u0020–\u0020</string>
+    <string name="notification_mark" translatable="false">•</string>
+    <string name="empty_string" translatable="false"></string>
+    <string name="delete_symbol" translatable="false">⌫</string>
+    <string name="close_symbol" translatable="false">◅</string>
+    <string name="close_contestual_symbol" translatable="false">▽</string>
+    <string name="external_link_symbol" translatable="false">⬒</string>
+    <string name="call_inbound_symbol" translatable="false">↘</string>
+    <string name="call_outbound_symbol" translatable="false">↖</string>
+
+    <!-- Logo -->
+    <string name="logo_mountain" translatable="false">▲\n~</string>
+    <string name="logo_name" translatable="false">FUJI\nCOMPUTER</string>
+    <string name="logo_app_name" translatable="false">AL0</string>
+    <string name="logo_app_version" translatable="false">0.7.0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+</resources>

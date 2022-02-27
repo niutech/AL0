@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/fill_until_footer"
+        android:paddingTop="80dp"
+        android:paddingBottom="4dp">
+        <View style="@style/spacer" />
+        <!-- App Version -->
+        <LinearLayout style="@style/about_phone_statistic_wrapper">
+            <TextView
+                style="@style/about_phone_statistic_header"
+                android:text="@string/about_phone_activity_app_version_label"
+                />
+            <TextView
+                style="@style/about_phone_statistic_body"
+                android:text="@string/logo_app_version"
+                />
+        </LinearLayout>
+        <LinearLayout style="@style/about_phone_statistic__divider"/>
+        <LinearLayout style="@style/about_phone_statistic_wrapper">
+            <TextView
+                style="@style/about_phone_statistic_header"
+                android:text="@string/about_phone_activity_phone_manufacturer_label"
+                />
+            <TextView
+                style="@style/about_phone_statistic_body"
+                android:id="@+id/about_phone_label_phone_manufacturer"
+                />
+        </LinearLayout>
+        <LinearLayout style="@style/about_phone_statistic__divider"/>
+        <LinearLayout style="@style/about_phone_statistic_wrapper">
+            <TextView
+                style="@style/about_phone_statistic_header"
+                android:text="@string/about_phone_activity_phone_model_label"
+                />
+            <TextView
+                style="@style/about_phone_statistic_body"
+                android:id="@+id/about_phone_label_phone_model"
+                />
+        </LinearLayout>
+        <LinearLayout style="@style/about_phone_statistic__divider"/>
+        <LinearLayout style="@style/about_phone_statistic_wrapper">
+            <TextView
+                style="@style/about_phone_statistic_header"
+                android:text="@string/about_phone_activity_android_version_label"
+                />
+            <TextView
+                style="@style/about_phone_statistic_body"
+                android:id="@+id/about_phone_label_phone_version"
+                />
+        </LinearLayout>
+        <LinearLayout style="@style/about_phone_statistic__divider"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/constraint_footer_wrapper"
+        style="@style/constraint_footer_wrapper">
+        <LinearLayout style="@style/activity_menu_footer_line">
+            <computer.fuji.al0.components.Button
+                style="@style/button_back"
+                android:id="@+id/about_phone_activity_button_close"
+                android:text="@string/close_symbol" />
+            <View style="@style/activity_menu_footer_spacer_small"/>
+            <computer.fuji.al0.components.Button
+                style="@style/button_fill"
+                android:id="@+id/about_phone_activity_button_keep_lock"
+                android:text="@string/settings_activity_menu_exit"
+                />
+            <computer.fuji.al0.components.Button
+                style="@style/button_single_char"
+                android:id="@+id/about_phone_activity_button_keep_lock_symbol"
+                android:text="@string/external_link_symbol"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        style="@style/settings_logo_wrapper"
+        android:id="@+id/about_phone_activity_logo">
+        <LinearLayout style="@style/settings_logo_layout_wrapper">
+            <LinearLayout style="@style/settings_logo_left_wrapper">
+                <TextView
+                    android:text="@string/logo_mountain"
+                    style="@style/settings_logo_text_mountain" />
+                <TextView
+                    android:text="@string/logo_name"
+                    style="@style/settings_logo_text_name" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="computer.fuji.al0.activities.ClockActivity">
+    <RelativeLayout
+        android:id="@+id/clock_activity_wrapper"
+        style="@style/tabbed_activity__wrapper">
+        <LinearLayout
+            android:id="@+id/clock_activity_fragments"
+            style="@style/tabbed_activity__tab" />
+        <!--
+        <LinearLayout style="@style/activity_menu_footer_wrapper">
+
+            <LinearLayout style="@style/activity_menu_footer_line">
+
+                <com.simquat.phone.components.Button
+                    android:id="@+id/clock_activity_alarm_button"
+                    style="@style/button"
+                    android:text="@string/clock_activity_button_clock" />
+
+                <View style="@style/activity_menu_footer_spacer" />
+
+                <com.simquat.phone.components.Button
+                    android:id="@+id/clock_activity_stopwatch_button"
+                    style="@style/button"
+                    android:text="@string/clock_activity_button_stopwatch" />
+
+                <View style="@style/activity_menu_footer_spacer" />
+
+                <com.simquat.phone.components.Button
+                    android:id="@+id/clock_activity_timer_button"
+                    style="@style/button"
+                    android:text="@string/clock_activity_button_timer" />
+            </LinearLayout>
+        </LinearLayout>
+        -->
+    </RelativeLayout>
+</LinearLayout>

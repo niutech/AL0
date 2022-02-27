@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <computer.fuji.al0.components.TextInputMovableCursor
+        android:id="@+id/phone_contacts_find_query_text_input"
+        style="@style/phone_contacts_find__text_input"
+        android:ellipsize="none"
+        />
+    <RelativeLayout style="@style/phone_contacts_find__list_wrapper">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/phone_contacts_find_list"
+            style="@style/phone_contacts__list" />
+        <View style="@style/fade_to_color5_up_down" />
+        <View style="@style/fade_to_color5_down_up" />
+    </RelativeLayout>
+    <computer.fuji.al0.components.Keyboard
+        android:id="@+id/phone_contacts_find_keyboard"
+        style="@style/keyboard"/>
+</RelativeLayout>

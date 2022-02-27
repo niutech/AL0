@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item">
+    <LinearLayout style="@style/list_item_wrapper">
+        <TextView
+            android:id="@+id/list_items_list_item_is_marked"
+            style="@style/list_item_is_marked" />
+        <TextView
+            android:id="@+id/list_items_list_item_text"
+            style="@style/list_item_text"
+            android:text="List item" />
+        <View
+            android:id="@+id/list_items_list_item_right_spacer"
+            style="@style/spacer"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/list_items_list_item_right_text"
+            style="@style/list_item_text"
+            android:text="List item"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/calendar_wrapper">
+    <TextView
+        style="@style/calendar_month_label"
+        android:id="@+id/calendar_month_label"
+        />
+    <GridLayout
+        style="@style/calendar_days_wrapper"
+        android:id="@+id/calendar_days"
+        />
+</LinearLayout>

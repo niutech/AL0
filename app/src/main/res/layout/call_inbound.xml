@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/call_inbound_wrapper">
+    <LinearLayout
+        style="@style/call_header" >
+        <TextView
+            style="@style/call_inbound_time"
+            android:id="@+id/date"
+            android:text="Monday, 11:23 pm"
+            android:textAllCaps="true"/>
+        <TextView
+            style="@style/call_inbound_info"
+            android:id="@+id/info_divider"
+            android:text=" • " />
+        <TextView
+            style="@style/call_inbound_info"
+            android:id="@+id/info"
+            android:text="info" />
+    </LinearLayout>
+    <LinearLayout style="@style/call_inbound_body_wrapper">
+        <TextView
+            style="@style/call_inbound_body_is_new"
+            android:id="@+id/body_is_new"
+            android:text="@string/notification_mark"/>
+        <TextView
+            style="@style/call_inbound_body"
+            android:id="@+id/body"
+            android:text="Call body"/>
+    </LinearLayout>
+
+</LinearLayout>
